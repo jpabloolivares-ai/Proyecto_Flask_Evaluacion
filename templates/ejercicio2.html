@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block title %}Ejercicio 2{% endblock %}{% block content %}
+<section class="panel"><h2>Formulario de nombres</h2><p>Ingresa tres nombres para comparar sus caracteres.</p>
+<form method="POST"><label>Nombre 1:</label><input type="text" name="nombre1" required>
+<label>Nombre 2:</label><input type="text" name="nombre2" required>
+<label>Nombre 3:</label><input type="text" name="nombre3" required>
+<button type="submit">Enviar</button></form><a class="volver" href="{{ url_for('inicio') }}">Volver al menú</a></section>{% endblock %}

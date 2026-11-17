@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Evaluación Flask{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><main class="contenedor"><header><h1>Aplicación de ejercicios</h1><p>Evaluación Unidad N° 3 – Programación Web</p></header>
+{% with mensajes = get_flashed_messages() %}{% if mensajes %}<div class="alerta">{% for m in mensajes %}<p>{{ m }}</p>{% endfor %}</div>{% endif %}{% endwith %}
+{% block content %}{% endblock %}<footer>Aplicación desarrollada con Python y Flask</footer></main></body></html>

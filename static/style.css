@@ -1,0 +1,10 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f1f3f7;color:#252525}
+.contenedor{width:min(760px,92%);margin:35px auto}header{text-align:center;margin-bottom:25px}
+header h1{color:#174ea6;margin-bottom:6px}.panel{background:white;padding:28px;border-radius:12px;box-shadow:0 3px 14px #00000017}
+.panel h2{margin-top:0;color:#174ea6}.centrado{text-align:center}.botones{display:flex;justify-content:center;gap:18px;margin-top:28px;flex-wrap:wrap}
+.boton,button{display:inline-block;border:0;border-radius:7px;background:#087cf0;color:white;padding:13px 24px;text-decoration:none;font-size:16px;cursor:pointer}
+.boton:hover,button:hover{background:#075fba}form{display:flex;flex-direction:column;gap:9px;margin-top:20px}
+label{font-weight:bold;margin-top:5px}input{width:100%;padding:11px;border:1px solid #c9cdd4;border-radius:5px;font-size:15px}
+button{margin-top:12px;align-self:flex-start}.volver{display:inline-block;margin-top:20px;color:#075fba}
+.alerta{background:#fff0f0;color:#a32323;border:1px solid #e5b4b4;border-radius:7px;padding:8px 15px;margin-bottom:15px}
+.estado{font-size:21px;font-weight:bold}.bien{color:#168044}.mal{color:#bd2525}footer{text-align:center;color:#777;font-size:13px;margin:22px 0}

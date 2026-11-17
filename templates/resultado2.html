@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block title %}Resultado ejercicio 2{% endblock %}{% block content %}
+<section class="panel centrado"><h2>Resultado del ejercicio 2</h2><p>Nombres ingresados:</p>
+<ul>{% for n in nombres %}<li>{{ n }} ({{ n|length }} caracteres)</li>{% endfor %}</ul>
+<p>Nombre(s) con más caracteres:</p>{% for n in mayores %}<p class="estado bien">{{ n }}</p>{% endfor %}
+<p>Cantidad de caracteres: <strong>{{ cantidad }}</strong></p>
+<a class="boton" href="{{ url_for('ejercicio2') }}">Volver al formulario</a><p><a href="{{ url_for('inicio') }}">Volver al menú</a></p></section>{% endblock %}

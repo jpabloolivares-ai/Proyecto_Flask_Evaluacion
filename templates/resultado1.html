@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block title %}Resultado ejercicio 1{% endblock %}{% block content %}
+<section class="panel centrado"><h2>Resultado del ejercicio 1</h2><p>Promedio: <strong>{{ promedio }}</strong></p>
+<p>Asistencia: <strong>{{ asistencia }}%</strong></p><p class="estado {{ 'bien' if estado == 'APROBADO' else 'mal' }}">{{ estado }}</p>
+<p>Para aprobar se necesita promedio igual o superior a 40 y asistencia igual o superior a 75%.</p>
+<a class="boton" href="{{ url_for('ejercicio1') }}">Volver al formulario</a><p><a href="{{ url_for('inicio') }}">Volver al menú</a></p></section>{% endblock %}
